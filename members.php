@@ -54,7 +54,7 @@ include("nav.php");
       <div class="row m-1 ">
                     <div class="form-group col-md-4">
                         <label class="form-lable">Memberid</label>
-                        <input class="form-control disabled" type="text" name="memberid" id="memberid" style="background-color: #cacdcf;">
+                        <input class="form-control " type="text" name="memberid" id="memberid">
                     </div>
                     <div class="form-group col-md-4">
                         <label class="form-lable ">First Name</label>
