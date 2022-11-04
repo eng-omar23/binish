@@ -1,0 +1,6 @@
+  Specification
+1:payment part has to be done
+2:schedule needs script and new column for period.
+3:bootstap has to be applied in order to get consistency.
+4:search for members based on gender and shift.
+5:active and expire instead of able and enable.
