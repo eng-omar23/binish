@@ -51,7 +51,8 @@ include("nav.php");
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class="row m-1 ">
+            <form>
+                <div class="row m-1 ">
                     <div class="form-group col-md-4">
                         <label class="form-lable">Memberid</label>
                         <input class="form-control " type="text" name="memberid" id="memberid">
@@ -76,6 +77,7 @@ include("nav.php");
                     </div>
                     
                     <div class="form-group col-md-4">
+                        <lable for="gender" >Gender</lael><br>
                         <label><input type="radio" name="gender" id="gender" value="male">Male</label> 
                         <label><input type="radio" name="gender" id="gender" value="female">Female</label>
                     </div>
@@ -147,6 +149,7 @@ include("nav.php");
                         <input class="form-control disabled" type="date" name="ExpDate" id="expDate" readonly>
                     </div>
                 </div>
+            </form>
       </div>
       <div class="modal-footer">
         <button type="button" id="btnsave" class="btn btn-dark" onclick="addMember()" >Submit</button>
@@ -270,7 +273,9 @@ include("nav.php");
 <script>
   $(document).ready(function(){
     displayData();
-
+    $('#completeModal').on('hidden.bs.modal', function () {
+    $('#completeModal form')[0].reset();
+    });
   });
   //display data
   
